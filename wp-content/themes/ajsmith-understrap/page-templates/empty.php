@@ -10,6 +10,8 @@
 
 get_header();
 
+<div class="hero__title">AJ Smith</div>
+
 while ( have_posts() ) : the_post();
 	get_template_part( 'loop-templates/content', 'empty' );
 endwhile;
