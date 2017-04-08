@@ -1,5 +1,11 @@
 body {
   * {box-sizing:border-box;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+
+	#content {
+		background: rgba(255, 255, 255, 0.95);
+		border-top: 5px solid rgba(115, 158, 190, 0.35);
+		padding-top: 10px;
+	}
   
   .text-wrap{
 	margin: 0;
@@ -146,103 +152,6 @@ body {
 
 
 /* ANIMATIONS */
-@-webkit-keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in;
-    }
-    8% {
-        opacity: 1;
-        transform: scale(1.05);
-        animation-timing-function: ease-out;
-    }
-    17% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    100% { opacity: 0 }
-}
-@-moz-keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in;
-    }
-    8% {
-        opacity: 1;
-        transform: scale(1.05);
-        animation-timing-function: ease-out;
-    }
-    17% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    100% { opacity: 0 }
-}
-@-o-keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in;
-    }
-    8% {
-        opacity: 1;
-        transform: scale(1.05);
-        animation-timing-function: ease-out;
-    }
-    17% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    100% { opacity: 0 }
-}
-@-ms-keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in;
-    }
-    8% {
-        opacity: 1;
-        transform: scale(1.05);
-        animation-timing-function: ease-out;
-    }
-    17% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    100% { opacity: 0 }
-}
-@keyframes imageAnimation {
-    0% {
-        /* opacity: 0; */
-        animation-timing-function: ease-in;
-		transform: translate(-344px, -45px)
-    }
-	10% {
-		opacity:1
-	}
-	90% {
-		opacity:1;
-	}
-    100% {
-		opacity:0;
-		transform: translate(-193px, -45px) 
-	}
-}
 
 @keyframes imageAnimation2 {
     0% {
