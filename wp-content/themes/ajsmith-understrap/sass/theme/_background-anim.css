@@ -1,0 +1,184 @@
+.background-slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.background-slideshow span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-animation: imageAnimation 70s linear infinite 0s;
+  animation: imageAnimation 70s linear infinite 0s;
+}
+
+.background-slideshow li:nth-child(1) span {
+  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/iceberg.jpg);
+}
+
+.background-slideshow li:nth-child(2) span {
+  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/fanniebay.jpg);
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+.background-slideshow li:nth-child(3) span {
+  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/ghostgum.jpg);
+  -webkit-animation-delay: 30s;
+  animation-delay: 30s;
+}
+
+.background-slideshow li:nth-child(4) span {
+  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg);
+  -webkit-animation-delay: 45s;
+  animation-delay: 45s;
+}
+
+.background-slideshow li:nth-child(5) span {
+  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/penguin.jpg);
+  -webkit-animation-delay: 60s;
+  animation-delay: 60s;
+}
+
+/* ANIMATIONS */
+/* @-webkit-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% { opacity: 0 }
+} */
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    /*transform: scale(1.05);*/
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    /*transform: scale(1.1);*/
+  }
+  25% {
+    opacity: 0;
+    /*transform: scale(1.1);*/
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    /*transform: scale(1.05);*/
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    /*transform: scale(1.1);*/
+  }
+  25% {
+    opacity: 0;
+    /*transform: scale(1.1);*/
+  }
+  100% {
+    opacity: 0;
+  }
+}
