@@ -49,10 +49,10 @@ $container = get_theme_mod( 'understrap_container_type' );
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li class="hidden-desktop">
-          <a href="#!">Home</a>
+          <a href="#!"><i class="fa fa-home hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Home</a>
         </li>
         <li>
-          <a href="#!"><i class="fa fa-code hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Front End Web Developer</a>
+          <a href="#!"><i class="fa fa-code hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Web Portfolio</a>
         </li>
         <!-- <li>
           <a href="#!">Services</a>
@@ -69,7 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           </ul>
         </li> -->
         <li>
-          <a href="#!"><i class="fa fa-camera hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Photographer</a>
+          <a href="#!"><i class="fa fa-camera hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Photography</a>
         </li>
         <li>
           <a href="#!"><i class="fa fa-phone hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Contact</a>
@@ -82,6 +82,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 	<div class="text-wrap">
+
 	  <svg viewBox="0 0 500 80">
 		<pattern 
 				 id="p-img1" 
@@ -97,7 +98,31 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 patternUnits="userSpaceOnUse"
 				 width="200%" height="200%"
 				 x="-60%" y="-10%">
+		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/fanniebay.jpg" width="300" height="200"/>
+		</pattern>
+		<pattern 
+				 id="p-img3" 
+				 viewBox="0 0 300 100"
+				 patternUnits="userSpaceOnUse"
+				 width="200%" height="200%"
+				 x="-60%" y="-10%">
+		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/ghostgum.jpg" width="300" height="200"/>
+		</pattern>
+		<pattern 
+				 id="p-img4" 
+				 viewBox="0 0 300 100"
+				 patternUnits="userSpaceOnUse"
+				 width="200%" height="200%"
+				 x="-60%" y="-10%">
 		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg" width="300" height="200"/>
+		</pattern>
+		<pattern 
+				 id="p-img5" 
+				 viewBox="0 0 300 100"
+				 patternUnits="userSpaceOnUse"
+				 width="200%" height="200%"
+				 x="-60%" y="-10%">
+		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/penguin.jpg" width="300" height="200"/>
 		</pattern>
 		<text text-anchor="middle"
 			  x="50%"
@@ -106,19 +131,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 			  class="img-layer">
 		  AJ Smith
 		</text>
-		<!-- DISABLE GRADIENT
-		<linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
-		  <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
-		  <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
-		  <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
-		</linearGradient>
+               <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
+                 <stop stop-color="rgba(255, 255, 255, 0.8)" offset="10%"/>
+                 <stop stop-color="rgba(255, 255, 255, 0.4)" offset="50%"/>
+                 <stop stop-color="rgba(255, 255, 255, 0.3)" offset="90%"/>
+               </linearGradient>
 
-		<text text-anchor="middle"
-			  x="50%"
-			  y="50%"
-			  dy=".35em"
-			  class="gradient-layer">
-		  AJ Smith
-		</text> -->
+               <text text-anchor="middle"
+                         x="50%"
+                         y="50%"
+                         dy=".35em"
+                         class="gradient-layer">
+                 AJ Smith
+               </text>
+
 	  </svg>
+	</div>
+		<div class="subtext">
+		<span><a href="#">Front End Web Developer</a></span>
+		and
+		<span><a href="#">Photographer</a></span>
 	</div>

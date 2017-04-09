@@ -21,7 +21,7 @@
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 70s linear infinite 0s;
+    animation: imageAnimation 80s linear infinite 0s;
 }
 
 .background-slideshow li:nth-child(1) span {
@@ -134,16 +134,13 @@
     }
     8% {
         opacity: 1;
-        /*transform: scale(1.05);*/
         animation-timing-function: ease-out;
     }
     17% {
         opacity: 1;
-        /*transform: scale(1.1);*/
     }
     25% {
         opacity: 0;
-        /*transform: scale(1.1);*/
     }
     100% { opacity: 0 }
 }

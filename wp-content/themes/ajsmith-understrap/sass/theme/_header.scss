@@ -56,7 +56,7 @@ $link-hover-color: #2581DC;
 // Navigation 
 nav {
   margin:0 auto;
-  width:567px;
+  width:362px;
   ul {
     list-style: none;
     margin: 0;
@@ -124,12 +124,13 @@ nav {
   }
   nav {
 	  &.open {
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 	  }
    width: 100%;
     padding: $nav-height 0 15px;
     ul {
       display: none;
+	  margin-top:-10px;
       li {
         float: none;
         a {
