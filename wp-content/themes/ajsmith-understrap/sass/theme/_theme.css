@@ -6,6 +6,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     font-family: 'robotoregular', Arial,sans-serif; }
+  body h1 {
+    margin-bottom: 30px; }
   body a {
     color: #FFF; }
     body a:hover {
