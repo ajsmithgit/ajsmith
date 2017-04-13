@@ -1,0 +1,39 @@
+.clip-me {
+		&.antarctica {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
+		}
+		&.argentina {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+		}
+		&.australia {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
+		}
+		&.bolivia {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
+		}
+		&.brazil {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/brazil.png);
+		}
+		&.argentina {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+		}
+		&.australia {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
+		}
+		&.bolivia {
+			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
+		}
+		
+		-webkit-mask-repeat: no-repeat;
+		-webkit-mask-size: 100%;
+		background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/iceberg.jpg);
+		background-position: 20% 20%;
+		background-size: 100%;
+		width: 229px;
+		height: 200px;
+		margin: 0 auto;
+		font-size: 30px;
+		padding: 70px 60px;
+		color: #FFF;
+		text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+	}

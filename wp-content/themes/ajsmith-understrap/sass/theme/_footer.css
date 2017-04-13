@@ -1,0 +1,16 @@
+#wrapper-footer {
+  padding: 0; }
+  #wrapper-footer > .container-fluid {
+    color: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.6));
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden; }
+    #wrapper-footer > .container-fluid a {
+      color: rgba(255, 255, 255, 0.3); }
+      #wrapper-footer > .container-fluid a:hover {
+        color: white;
+        text-decoration: underline; }
+
+

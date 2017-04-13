@@ -1,5 +1,6 @@
 body {
-  background: #000; }
+  background: #000;
+  /* Forms */ }
   body * {
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
@@ -24,24 +25,30 @@ body {
     src: url("../../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
     font-weight: normal;
     font-style: normal; } }
-  body .clip-me {
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100%;
-    background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/pp.jpg);
-    background-position: 20% 20%;
-    background-size: 100%;
-    width: 229px;
-    height: 200px;
-    margin: 0 auto;
-    font-size: 30px;
-    padding: 70px 60px;
-    color: #FFF;
-    text-shadow: 1px 1px 8px black; }
-    body .clip-me.antarctica {
-      -webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/antarctica.png); }
+  body .wpcf7 {
+    margin: 20px 0 !important; }
+  body input[type=text], body input[type=email], body textarea, body input[type=submit] {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(0, 0, 0, 0.6) !important;
+    border-radius: 0 !important;
+    transition: all 0.3s !important; }
+  body .wpcf7-form input[type=text]:focus, body .wpcf7-form input[type=email]:focus, body .wpcf7-form textarea:focus {
+    background: #FFF !important;
+    border: 1px solid #000; }
+  body .wpcf7-form .wpcf7-form-control-wrap input[type=text]:hover, body .wpcf7-form .wpcf7-form-control-wrap input[type=email]:hover, body .wpcf7-form .wpcf7-form-control-wrap textarea:hover {
+    background: rgba(255, 255, 255, 0.7); }
+  body input[type=submit] {
+    color: rgba(255, 255, 255, 0.7) !important; }
+  body input[type=submit]:hover {
+    color: rgba(0, 0, 0, 0.8) !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(0, 0, 0, 0.6) !important;
+    font-weight: 700; }
+  body .wrapper {
+    padding: 30px 0 0 0; }
   body #content {
-    background: rgba(255, 255, 255, 0.8);
-    border-top: 5px solid rgba(115, 158, 190, 0.35);
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     padding-top: 10px; }
   body .text-wrap {
     margin: 0;
@@ -91,6 +98,8 @@ body {
       body .text-wrap svg .img-layer {
         /* fill: url(#p-img1); */
         -webkit-animation: imageAnimationCycle 80s linear infinite 0s;
+        -moz-animation: imageAnimationCycle 80s linear infinite 0s;
+        -o-animation: imageAnimationCycle 80s linear infinite 0s;
         animation: imageAnimationCycle 80s linear infinite 0s; }
       body .text-wrap svg .gradient-layer {
         fill: url(#gr-overlay); }
@@ -202,6 +211,70 @@ body {
     -webkit-transform: translate(-193px, -45px);
     transform: translate(-193px, -45px); } }
 @-webkit-keyframes imageAnimationCycle {
+  0% {
+    opacity: 0;
+    fill: url(#p-img1); }
+  2% {
+    opacity: 1;
+    fill: url(#p-img1); }
+  16% {
+    opacity: 1;
+    fill: url(#p-img1); }
+  18% {
+    opacity: 0;
+    fill: url(#p-img1); }
+  20% {
+    opacity: 0;
+    fill: url(#p-img2); }
+  22% {
+    opacity: 1;
+    fill: url(#p-img2); }
+  36% {
+    opacity: 1;
+    fill: url(#p-img2); }
+  38% {
+    opacity: 0;
+    fill: url(#p-img2); }
+  40% {
+    opacity: 0;
+    fill: url(#p-img3); }
+  42% {
+    opacity: 1;
+    fill: url(#p-img3); }
+  56% {
+    opacity: 1;
+    fill: url(#p-img3); }
+  58% {
+    opacity: 0;
+    fill: url(#p-img3); }
+  60% {
+    opacity: 0;
+    fill: url(#p-img4); }
+  62% {
+    opacity: 1;
+    fill: url(#p-img4); }
+  76% {
+    opacity: 1;
+    fill: url(#p-img4); }
+  78% {
+    opacity: 0;
+    fill: url(#p-img4); }
+  80% {
+    opacity: 0;
+    fill: url(#p-img5); }
+  82% {
+    opacity: 1;
+    fill: url(#p-img5); }
+  96% {
+    opacity: 1;
+    fill: url(#p-img5); }
+  98% {
+    opacity: 0;
+    fill: url(#p-img5); }
+  100% {
+    opacity: 0;
+    fill: url(#p-img1); } }
+@-moz-keyframes imageAnimationCycle {
   0% {
     opacity: 0;
     fill: url(#p-img1); }
