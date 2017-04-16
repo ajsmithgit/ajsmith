@@ -22,23 +22,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta property="og:url" content="http://www.AJ-Smith.com.au">
     <meta property="og:title" content="AJ Smith | Front End Web Developer, Photographer, Explorer">
     <meta property="og:description" content="I love Travel, Photography, building on the web - sometimes the three come together!">
-    <meta property="og:image" content="/AJSmith/wp-content/themes/ajsmith-understrap/img/aj.png">
+    <meta property="og:image" content="/wp-content/themes/ajsmith-understrap/img/aj.png">
 	
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
-	<link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_header.css' type='text/css' media='all' /><link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_header.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_header.css' type='text/css' media='all' /><link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_footer.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_background-anim.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_theme.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_clipmaps.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='understrap-styles-css'  href='/AJSmith/wp-content/themes/ajsmith-understrap/sass/theme/_photo-gallery.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_header.css' type='text/css' media='all' /><link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_header.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_header.css' type='text/css' media='all' /><link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_footer.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_background-anim.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_theme.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_clipmaps.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_photo-gallery.css' type='text/css' media='all' />
 	
-	<script type='text/javascript' src='/AJSmith/wp-content/themes/ajsmith-understrap/js/ajsmith.js'></script>
-	<script type='text/javascript' src='/AJSmith/wp-content/themes/ajsmith-understrap/js/photoswipe.js'></script>
-	<link rel="shortcut icon" href="/AJSmith/wp-content/themes/ajsmith-understrap/images/aj.png"/>
+	<script type='text/javascript' src='/wp-content/themes/ajsmith-understrap/js/ajsmith.js'></script>
+	<script type='text/javascript' src='/wp-content/themes/ajsmith-understrap/js/ajsmith.js'></script>
+	<!-- <script type='text/javascript' src='/wp-content/themes/ajsmith-understrap/js/photoswipe.js'></script> -->
+	<link rel="shortcut icon" href="/wp-content/themes/ajsmith-understrap/img/aj.png"/>
 </head>
 
 <body <?php body_class(); ?>>
@@ -60,10 +61,10 @@ $container = get_theme_mod( 'understrap_container_type' );
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li class="hidden-desktop">
-          <a href="/ajsmith/"><i class="fa fa-home hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Home</a>
+          <a href="/"><i class="fa fa-home hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Home</a>
         </li>
         <li>
-          <a href="/ajsmith/web"><i class="fa fa-code hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Web</a>
+          <a href="/web"><i class="fa fa-code hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Web</a>
         </li>
         <!-- <li>
           <a href="#!">Services</a>
@@ -80,10 +81,10 @@ $container = get_theme_mod( 'understrap_container_type' );
           </ul>
         </li> -->
         <li>
-          <a href="/ajsmith/photograpy"><i class="fa fa-camera hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Photography</a>
+          <a href="/photography"><i class="fa fa-camera hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Photography</a>
         </li>
         <li>
-          <a href="/ajsmith/contact"><i class="fa fa-phone hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Contact</a>
+          <a href="/contact"><i class="fa fa-phone hidden-desktop" aria-hidden="true">&nbsp&nbsp</i>Contact</a>
         </li>
       </ul>
     </nav>
@@ -101,7 +102,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 patternUnits="userSpaceOnUse"
 				 width="200%" height="200%"
 				 x="-60%" y="-10%">
-		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/iceberg.jpg" width="300" height="200"/>
+		  <image xlink:href="/wp-content/uploads/2017/04/Antarctica-47.jpg" width="300" height="200"/>
 		</pattern>
 		<pattern 
 				 id="p-img2" 
@@ -109,7 +110,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 patternUnits="userSpaceOnUse"
 				 width="200%" height="200%"
 				 x="-60%" y="-10%">
-		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/lighthouse.jpg" width="300" height="200"/>
+		  <image xlink:href="/wp-content/uploads/2017/04/IMG_8125.jpg" width="300" height="200"/>
 		</pattern>
 		<pattern 
 				 id="p-img3" 
@@ -117,7 +118,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 patternUnits="userSpaceOnUse"
 				 width="200%" height="200%"
 				 x="-60%" y="-10%">
-		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/ghostgum.jpg" width="300" height="200"/>
+		  <image xlink:href="/wp-content/themes/ajsmith-understrap/img/ghostgum.jpg" width="300" height="200"/>
 		</pattern>
 		<pattern 
 				 id="p-img4" 
@@ -125,7 +126,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 patternUnits="userSpaceOnUse"
 				 width="200%" height="200%"
 				 x="-60%" y="-10%">
-		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg" width="300" height="200"/>
+		  <image xlink:href="/wp-content/uploads/2017/04/amazon-11.jpg" width="300" height="200"/>
 		</pattern>
 		<pattern 
 				 id="p-img5" 
@@ -133,7 +134,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 patternUnits="userSpaceOnUse"
 				 width="200%" height="200%"
 				 x="-60%" y="-10%">
-		  <image xlink:href="/AJSmith/wp-content/themes/ajsmith-understrap/img/penguin.jpg" width="300" height="200"/>
+		  <image xlink:href="/wp-content/themes/ajsmith-understrap/img/penguin.jpg" width="300" height="200"/>
 		</pattern>
 		<text text-anchor="middle"
 			  x="50%"

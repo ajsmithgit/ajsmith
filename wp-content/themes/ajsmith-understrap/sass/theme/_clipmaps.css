@@ -1,15 +1,19 @@
+/* Image Variables */
+/* Image Variables */
+/* Image Variables */
 .map-wrap {
   position: relative;
   padding: 0;
   float: left;
   cursor: pointer;
   width: 21%;
-  margin: 10px 2% 30px 2%; }
+  margin: 10px 2% 30px 2%;
+  /* Intermittent Map popping! DOESN'T MATTER UNTIL INTERMITTENT POPPING IS IN */ }
   @media (max-width: 1025px) {
     .map-wrap {
       width: 21% !important; }
       .map-wrap .clip-me {
-        padding: 82px 60px !important; } }
+        padding: 75px 60px !important; } }
   @media (max-width: 950px) {
     .map-wrap {
       width: 28% !important; }
@@ -19,8 +23,10 @@
     .map-wrap {
       width: 45% !important; }
       .map-wrap .clip-me {
-        width: 87% !important;
-        padding: 80px 60px !important; } }
+        width: 76% !important;
+        padding: 80px 60px !important;
+        -webkit-mask-size: 67% !important;
+        mask-size: 67% !important; } }
   @media (max-width: 630px) {
     .map-wrap {
       width: 45% !important; }
@@ -38,26 +44,63 @@
       width: 45% !important; }
       .map-wrap .clip-me {
         width: 87% !important;
-        padding: 40px 60px !important; } }
+        padding: 40px 60px !important;
+        -webkit-mask-size: 64% !important;
+        mask-size: 64% !important; } }
   .map-wrap:hover .clip-me {
-    -webkit-animation: clip-me-hover 5s ease-in-out 0s;
-    -moz-animation: clip-me-hover 5s ease-in-out 0s;
-    -o-animation: clip-me-hover 5s ease-in-out 0s;
-    animation: clip-me-hover 5s ease-in-out 0s forwards; }
+    -webkit-animation: clip-me-hover 2s ease-out 0s forwards;
+    -moz-animation: clip-me-hover 2s ease-out 0s forwards;
+    animation: clip-me-hover 2s ease-out 0s forwards; }
     .map-wrap:hover .clip-me.antarctica {
-      background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/iceberg.jpg); }
+      background-image: url(/wp-content/uploads/2017/04/Antarctica-27.jpg); }
     .map-wrap:hover .clip-me.argentina {
-      background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/fanniebay.jpg); }
+      background-image: url(/wp-content/uploads/2017/04/14.jpg); }
     .map-wrap:hover .clip-me.australia {
-      background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
+      background-image: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
     .map-wrap:hover .clip-me.bolivia {
-      background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
+      background-image: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
     .map-wrap:hover .clip-me.brazil {
-      background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
+      background-image: url(/wp-content/uploads/2017/04/ilha-14.jpg); }
+    .map-wrap:hover .clip-me.nepal {
+      background-image: url(/wp-content/uploads/2017/04/IMG_6984.jpg); }
+    .map-wrap:hover .clip-me.vietnam {
+      background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+    .map-wrap:hover .clip-me.sumatra {
+      background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+    .map-wrap:hover .clip-me.india {
+      background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+  .map-wrap.pop .clip-me {
+    -webkit-animation: clip-me-popping 4s ease-out 0s;
+    -moz-animation: clip-me-popping 4s ease-out 0s;
+    animation: clip-me-popping 4s ease-out 0s; }
+    .map-wrap.pop .clip-me.antarctica {
+      background-image: url(/wp-content/uploads/2017/04/Antarctica-27.jpg); }
+    .map-wrap.pop .clip-me.argentina {
+      background-image: url(/wp-content/uploads/2017/04/14.jpg); }
+    .map-wrap.pop .clip-me.australia {
+      background-image: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
+    .map-wrap.pop .clip-me.bolivia {
+      background-image: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
+    .map-wrap.pop .clip-me.brazil {
+      background-image: url(/wp-content/uploads/2017/04/ilha-14.jpg); }
+    .map-wrap.pop .clip-me.nepal {
+      background-image: url(/wp-content/uploads/2017/04/IMG_6984.jpg); }
+    .map-wrap.pop .clip-me.vietnam {
+      background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+    .map-wrap.pop .clip-me.sumatra {
+      background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+    .map-wrap.pop .clip-me.india {
+      background-image: url(/wp-content/uploads/2017/04/image.jpg); }
   .map-wrap .clip-me {
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100%;
+    -webkit-mask-size: 80%;
     -webkit-mask-position: 50% 0;
+    -moz-mask-repeat: no-repeat;
+    -moz-mask-size: 80%;
+    -moz-mask-position: 50% 0;
+    mask-repeat: no-repeat;
+    mask-size: 80%;
+    mask-position: 50% 0;
     background-position: 20% 0%;
     background-size: 150%;
     width: 100%;
@@ -66,24 +109,50 @@
     font-size: 30px;
     padding: 80px 60px;
     color: #FFF;
-    background-color: #fff; }
+    background-color: #fff;
+    list-style-type: none; }
     .map-wrap .clip-me.antarctica {
-      -webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png); }
-      .map-wrap .clip-me.antarctica:before {
-        -webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png); }
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png); }
     .map-wrap .clip-me.argentina {
-      -webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
-      -webkit-mask-size: 64%; }
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+      -webkit-mask-size: 47% !important;
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+      mask-size: 47% !important; }
     .map-wrap .clip-me.australia {
-      -webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
-      /* Fine tune the size of a map */
-      /* -webkit-mask-size: auto 166px; */ }
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png); }
     .map-wrap .clip-me.bolivia {
-      -webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png); }
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png); }
     .map-wrap .clip-me.brazil {
-      -webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/brazil.png);
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/brazil.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/brazil.png);
       /* Fine tune the size of a map */
       /* -webkit-mask-size: auto 161px; */ }
+    .map-wrap .clip-me.nepal {
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/Nepal-Map-Flag.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/Nepal-Map-Flag.png);
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/Nepal-Map-Flag.png); }
+    .map-wrap .clip-me.vietnam {
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/vietnam.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/vietnam.png);
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/vietnam.png);
+      -webkit-mask-size: 27% !important;
+      -moz-mask-size: 27% !important;
+      mask-size: 27% !important; }
+    .map-wrap .clip-me.sumatra {
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/sumatra.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/sumatra.png);
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/sumatra.png); }
+    .map-wrap .clip-me.india {
+      -webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/india.png);
+      -moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/india.png);
+      mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/india.png); }
   .map-wrap .clip-title {
     margin: 0 auto;
     text-align: center;
@@ -92,16 +161,65 @@
     width: 100%;
     list-style-type: none; }
 
+.no-cssmask .clip-me:hover {
+  -webkit-animation: clip-me-hover 2s ease-out 0s forwards;
+  -moz-animation: clip-me-hover 2s ease-out 0s forwards;
+  animation: clip-me-hover 2s ease-out 0s forwards; }
+.no-cssmask .clip-me.antarctica {
+  background-image: url(/wp-content/uploads/2017/04/Antarctica-27.jpg); }
+.no-cssmask .clip-me.argentina {
+  background-image: url(/wp-content/uploads/2017/04/14.jpg); }
+.no-cssmask .clip-me.australia {
+  background-image: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
+.no-cssmask .clip-me.bolivia {
+  background-image: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg); }
+.no-cssmask .clip-me.brazil {
+  background-image: url(/wp-content/uploads/2017/04/ilha-14.jpg); }
+.no-cssmask .clip-me.nepal {
+  background-image: url(/wp-content/uploads/2017/04/IMG_6984.jpg); }
+.no-cssmask .clip-me.vietnam {
+  background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+.no-cssmask .clip-me.sumatra {
+  background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+.no-cssmask .clip-me.india {
+  background-image: url(/wp-content/uploads/2017/04/image.jpg); }
+
 @-webkit-keyframes clip-me-hover {
   0% {
     background-position: 5% 0%; }
   100% {
     background-position: 95% 0%; } }
-
+@-moz-keyframes clip-me-hover {
+  0% {
+    background-position: 5% 0%; }
+  100% {
+    background-position: 95% 0%; } }
 @keyframes clip-me-hover {
   0% {
     background-position: 5% 0%; }
   100% {
     background-position: 95% 0%; } }
+/* Intermittent Popping! */
+@-webkit-keyframes clip-me-popping {
+  0% {
+    background-position: 5% 0%; }
+  500% {
+    background-position: 95% 0%; }
+  100% {
+    background-position: 5% 0%; } }
+@-moz-keyframes clip-me-popping {
+  0% {
+    background-position: 5% 0%; }
+  50% {
+    background-position: 95% 0%; }
+  100% {
+    background-position: 5% 0%; } }
+@keyframes clip-me-popping {
+  0% {
+    background-position: 5% 0%; }
+  50% {
+    background-position: 95% 0%; }
+  100% {
+    background-position: 5% 0%; } }
 
 

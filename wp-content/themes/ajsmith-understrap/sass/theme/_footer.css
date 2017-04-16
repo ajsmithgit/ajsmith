@@ -8,7 +8,7 @@
     font-size: 12px;
     overflow: hidden; }
     #wrapper-footer > .container-fluid a {
-      color: rgba(255, 255, 255, 0.3); }
+      color: rgba(255, 255, 255, 0.3);
       #wrapper-footer > .container-fluid a:hover {
         color: white;
         text-decoration: underline; }

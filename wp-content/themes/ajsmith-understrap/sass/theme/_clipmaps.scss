@@ -1,3 +1,19 @@
+/* Image Variables */
+/* Image Variables */
+/* Image Variables */
+$antarctica-img: url(/wp-content/uploads/2017/04/Antarctica-27.jpg);
+$argentina-img: url(/wp-content/uploads/2017/04/14.jpg);
+$australia-img: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg);
+$bolivia-img: url(/wp-content/themes/ajsmith-understrap/img/gorge.jpg);
+$brazil-img: url(/wp-content/uploads/2017/04/ilha-14.jpg);
+$nepal-img: url(/wp-content/uploads/2017/04/IMG_6984.jpg);
+$vietnam-img: url(/wp-content/uploads/2017/04/image.jpg);
+$sumatra-img: url(/wp-content/uploads/2017/04/image.jpg);
+$india-img: url(/wp-content/uploads/2017/04/image.jpg);
+
+
+
+
 .map-wrap {
     position: relative;
     padding: 0;
@@ -8,7 +24,7 @@
 	@media (max-width:1025px) {
 		width: 21%!important;
 		.clip-me {
-			padding:82px 60px!important;
+			padding:75px 60px!important;
 		}
 	}
 	@media (max-width:950px) {
@@ -20,8 +36,10 @@
 	@media (max-width:769px) {
 		width: 45%!important;
 		.clip-me {
-			width: 87%!important;
+			width: 76%!important;
 			padding:80px 60px!important;
+			-webkit-mask-size: 67%!important;
+			mask-size: 67%!important;
 		}
 	}
 	@media (max-width:630px) {
@@ -44,60 +62,141 @@
 		.clip-me {
 			width: 87%!important;
 			padding:40px 60px!important;
+			-webkit-mask-size: 64%!important;
+			mask-size: 64%!important;
 		}
 	}
 	
 	&:hover .clip-me {
-		-webkit-animation:clip-me-hover 5s ease-in-out 0s;
-		-moz-animation:clip-me-hover 5s ease-in-out 0s;
-		-o-animation:clip-me-hover 5s ease-in-out 0s;
-		animation:clip-me-hover 5s ease-in-out 0s forwards;
+		-webkit-animation:clip-me-hover 2s ease-out 0s forwards;
+		-moz-animation:clip-me-hover 2s ease-out 0s forwards;
+		animation:clip-me-hover 2s ease-out 0s forwards;
 		
 		&.antarctica {
-			background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/iceberg.jpg);
+			background-image: $antarctica-img;
 		}
 		&.argentina {
-			background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/fanniebay.jpg);
+			background-image: $argentina-img;
 		}
 		&.australia {
-			background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg);
+			background-image: $australia-img;
 		}
 		&.bolivia {
-			background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg);
+			background-image: $bolivia-img;
 		}
 		&.brazil {
-			background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg);
+			background-image: $brazil-img;
 		}
+		&.nepal {
+			background-image: $nepal-img;
+		}
+		&.vietnam {
+			background-image: $vietnam-img;
+		}
+		&.sumatra {
+			background-image: $sumatra-img;
+		}
+		&.india {
+			background-image: $india-img;
+		}
+	}
+	
+	/* Intermittent Map popping! DOESN'T MATTER UNTIL INTERMITTENT POPPING IS IN */
+	&.pop .clip-me {
+		-webkit-animation:clip-me-popping 4s ease-out 0s;
+		-moz-animation:clip-me-popping 4s ease-out 0s;
+		animation:clip-me-popping 4s ease-out 0s;
 		
+		&.antarctica {
+			background-image: $antarctica-img;
+		}
+		&.argentina {
+			background-image: $argentina-img;
+		}
+		&.australia {
+			background-image: $australia-img;
+		}
+		&.bolivia {
+			background-image: $bolivia-img;
+		}
+		&.brazil {
+			background-image: $brazil-img;
+		}
+		&.nepal {
+			background-image: $nepal-img;
+		}
+		&.vietnam {
+			background-image: $vietnam-img;
+		}
+		&.sumatra {
+			background-image: $sumatra-img;
+		}
+		&.india {
+			background-image: $india-img;
+		}
 	}
 	.clip-me {
 		&.antarctica {
-			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
-			&:before {
-				-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
-			}
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/antarctica.png);
 		}
 		&.argentina {
-			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
-			-webkit-mask-size: 64%;
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+			-webkit-mask-size: 47%!important;
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/argentina.png);
+			mask-size: 47%!important;
 		}
 		&.australia {
-			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
-			/* Fine tune the size of a map */
-			/* -webkit-mask-size: auto 166px; */
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/australia.png);
 		}
 		&.bolivia {
-			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/bolivia.png);
 		}
 		&.brazil {
-			-webkit-mask-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/clipmaps/brazil.png);
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/brazil.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/brazil.png);
 			/* Fine tune the size of a map */
 			/* -webkit-mask-size: auto 161px; */
 		}
+		&.nepal {
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/Nepal-Map-Flag.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/Nepal-Map-Flag.png);
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/Nepal-Map-Flag.png);
+		}
+		&.vietnam {
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/vietnam.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/vietnam.png);
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/vietnam.png);
+			-webkit-mask-size: 27%!important;
+			-moz-mask-size: 27%!important;
+			mask-size: 27%!important;
+		}
+		&.sumatra {
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/sumatra.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/sumatra.png);
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/sumatra.png);
+		}
+		&.india {
+			-webkit-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/india.png);
+			-moz-mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/india.png);
+			mask-image: url(/wp-content/themes/ajsmith-understrap/img/clipmaps/india.png);
+		}
 		
 		-webkit-mask-repeat: no-repeat;
-		-webkit-mask-size: 100%;
+		-webkit-mask-size: 80%;
 		-webkit-mask-position: 50% 0;
+		-moz-mask-repeat: no-repeat;
+		-moz-mask-size: 80%;
+		-moz-mask-position: 50% 0;
+		mask-repeat: no-repeat;
+		mask-size: 80%;
+		mask-position: 50% 0;
 		background-position: 20% 0%;
 		background-size: 150%;
 		width: 100%;
@@ -107,6 +206,7 @@
 		padding: 80px 60px;
 		color: #FFF;
 		background-color: #fff;
+		list-style-type: none;
 	}
 	.clip-title {
 		margin: 0 auto;
@@ -118,12 +218,71 @@
 	}
 }
 
+.no-cssmask {
+	.clip-me {
+		&:hover {
+			-webkit-animation:clip-me-hover 2s ease-out 0s forwards;
+			-moz-animation:clip-me-hover 2s ease-out 0s forwards;
+			animation:clip-me-hover 2s ease-out 0s forwards;
+		}
+		
+		&.antarctica {
+			background-image: $antarctica-img;
+		}
+		&.argentina {
+			background-image: $argentina-img;
+		}
+		&.australia {
+			background-image: $australia-img;
+		}
+		&.bolivia {
+			background-image: $bolivia-img;
+		}
+		&.brazil {
+			background-image: $brazil-img;
+		}
+		&.nepal {
+			background-image: $nepal-img;
+		}
+		&.vietnam {
+			background-image: $vietnam-img;
+		}
+		&.sumatra {
+			background-image: $sumatra-img;
+		}
+		&.india {
+			background-image: $india-img;
+		}
+	}
+}
 
+
+@-webkit-keyframes clip-me-hover {
+	0% {background-position: 5% 0%;}
+	100% {background-position: 95% 0%;}
+}
+@-moz-keyframes clip-me-hover {
+	0% {background-position: 5% 0%;}
+	100% {background-position: 95% 0%;}
+}
 @keyframes clip-me-hover {
-	0% {
-		background-position: 5% 0%;
-	}
-	100% {
-		background-position: 95% 0%;
-	}
+	0% {background-position: 5% 0%;}
+	100% {background-position: 95% 0%;}
+}
+
+/* Intermittent Popping! */
+@-webkit-keyframes clip-me-popping {
+	0% {background-position: 5% 0%;}
+	500% {background-position: 95% 0%;}
+	100% {background-position: 5% 0%;}
+}
+@-moz-keyframes clip-me-popping {
+	0% {background-position: 5% 0%;}
+	50% {background-position: 95% 0%;}
+	100% {background-position: 5% 0%;}
+}
+@keyframes clip-me-popping {
+	0% {background-position: 5% 0%;}
+	50% {background-position: 95% 0%;}
+	100% {background-position: 5% 0%;}
 }

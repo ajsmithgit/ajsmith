@@ -6,6 +6,9 @@ body {
 
 	h1 {
 		margin-bottom: 30px;
+		@media (max-width:$breakpoint) {
+			font-size:24px;
+		}
 	}
 	a {
 	  color:#FFF;
@@ -16,13 +19,16 @@ body {
 	  }
 	}
 	
-	@font-face {
-    font-family: 'christopherhand';
-    src: url('../../fonts/christopherhand-webfont.woff2') format('woff2'),
-         url('../../fonts/christopherhand-webfont.woff') format('woff');
+@font-face {
+    font-family: 'webfontregular';
+    src: url('/wp-content/themes/fonts/comesinhandy-webfont-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/fonts/comesinhandy-webfont-webfont.woff') format('woff'),
+         url('/wp-content/themes/fonts/comesinhandy-webfont-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-	}
+
+}
+	
 
 	@font-face {
 		font-family: 'robotoregular';
@@ -83,7 +89,6 @@ body {
 		border-bottom: 0;
 		font-weight: 100;
 		letter-spacing: 2px;
-		font-family: 'christopherhand';
 		position: relative;
 		color: #fff;
 		text-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.1);
@@ -124,7 +129,6 @@ body {
 			/* fill: url(#p-img1); */
 			-webkit-animation:imageAnimationCycle 80s linear infinite 0s;
 			-moz-animation:imageAnimationCycle 80s linear infinite 0s;
-			-o-animation:imageAnimationCycle 80s linear infinite 0s;
 			animation:imageAnimationCycle 80s linear infinite 0s;
 			
 		  }
@@ -134,9 +138,9 @@ body {
 		  .img-layer, .gradient-layer {
 			font-size:72px;
 			@media (max-width:$breakpoint) {
-				font-size: 122px;
+				font-size: 100px;
 			}
-			font-family: christopherhand;
+			font-family: 'christopherhand';
 		  }
 		}
 	  }
@@ -161,22 +165,57 @@ body {
 		  }
 		}
 	}
+	
+	ul.tech-logos {
+		width: 100%;
+		float: left;
+		text-align: center;
+		margin: 0 auto;
+		padding:0;
+		li {
+			float: left;
+			margin: 0 10px 20px 10px;
+			width: 22%;
+			@media (max-width:321px) {
+				width:17%;
+			}
+			@media (max-width:375px) {
+				width:18%;
+			}
+			list-style-type:none;
+			img {
+				width: 100%;
+				height: auto;
+				padding: 10px;
+				-webkit-filter: grayscale(1);
+				filter: grayscale(1);
+				background: #fff;
+			}
+		}
+		p {
+			display: none;
+		}
+	}
+	.skills {	
+		width: 90%;
+		text-align: center;
+		margin: 0 auto 20px auto;
+		color: rgba(255, 255, 255, 0.8);
+	}
+	
+	.no-cssmask {
+		.text-wrap svg .gradient-layer {
+			display:none;
+		}
+	}
 }
-
-
-
-
-
-
-
-
 
 .hero__title {
   font-size: 190px;
   border-bottom: 0;
   font-weight: 100;
   letter-spacing: 2px;
-  font-family: 'christopherhand';
+  font-family: 'christopherhandregular';
   position: relative;
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.1);

@@ -24,25 +24,25 @@
   animation: imageAnimation 80s linear infinite 0s; }
 
 .background-slideshow li:nth-child(1) span {
-  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/iceberg.jpg); }
+  background-image: url(/wp-content/uploads/2017/04/Antarctica-47.jpg); }
 
 .background-slideshow li:nth-child(2) span {
-  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/lighthouse.jpg);
+  background-image: url(/wp-content/uploads/2017/04/IMG_8125.jpg);
   -webkit-animation-delay: 15s;
   animation-delay: 15s; }
 
 .background-slideshow li:nth-child(3) span {
-  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/ghostgum.jpg);
+  background-image: url(/wp-content/themes/ajsmith-understrap/img/ghostgum.jpg);
   -webkit-animation-delay: 30s;
   animation-delay: 30s; }
 
 .background-slideshow li:nth-child(4) span {
-  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/gorge.jpg);
+  background-image: url(/wp-content/uploads/2017/04/amazon-11.jpg);
   -webkit-animation-delay: 45s;
   animation-delay: 45s; }
 
 .background-slideshow li:nth-child(5) span {
-  background-image: url(/AJSmith/wp-content/themes/ajsmith-understrap/img/penguin.jpg);
+  background-image: url(/wp-content/themes/ajsmith-understrap/img/penguin.jpg);
   -webkit-animation-delay: 60s;
   animation-delay: 60s; }
 
