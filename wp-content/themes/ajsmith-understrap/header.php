@@ -37,7 +37,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel='stylesheet' id='understrap-styles-css'  href='/wp-content/themes/ajsmith-understrap/sass/theme/_photo-gallery.css' type='text/css' media='all' />
 	
 	<script type='text/javascript' src='/wp-content/themes/ajsmith-understrap/js/ajsmith.js'></script>
-	<script type='text/javascript' src='/wp-content/themes/ajsmith-understrap/js/ajsmith.js'></script>
 	<!-- <script type='text/javascript' src='/wp-content/themes/ajsmith-understrap/js/photoswipe.js'></script> -->
 	<link rel="shortcut icon" href="/wp-content/themes/ajsmith-understrap/img/aj.png"/>
 </head>
